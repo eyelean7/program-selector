@@ -1,4 +1,7 @@
 $(function() {
+  $(".clickable").click(function() {
+    $(".layer1").show();
+  });
   // first level front or back end
   $("#whichEndSelect").change(function() {
     $(".layer2, .layer3, .outcome").hide();
