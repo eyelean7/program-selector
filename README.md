@@ -11,7 +11,7 @@ _This quiz leads the user through a series of questions, each question dependent
 ## Setup/Installation Requirements
 
 * _No setup required_
-* _[Click here]() to take the quiz_
+* _[Click here](https://eyelean7.github.io/program-selector/) to take the quiz_
 
 
 ## Technologies Used
