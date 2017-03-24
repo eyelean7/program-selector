@@ -7,8 +7,8 @@ $(function() {
   $("#whichEndSelect").change(function() {
     $(".layer2, .layer3, .outcome").hide();
     var whichEndInput = $("#whichEndSelect").val();
-    if (whichEndInput === "choose") {
-      alert("Please choose front-end or back-end");
+    if (whichEndInput === "none") {
+      alert("Please choose preference");
     }
     else if (whichEndInput === "front") {
       $("#front-end").show();
@@ -16,9 +16,8 @@ $(function() {
       $("#css-or-design").change(function() {
         $(".outcome").hide();
         var cssDesignInput = $("#css-or-design").val();
-        if (cssDesignInput === "choose") {
-          alert("Please choose the more appealing option")
-        }
+        if (cssDesignInput === "none") {
+          alert("Please choose preference");        }
         // you win CSS
         else if (cssDesignInput === "css") {
           $("#cssCourse").show();
@@ -38,8 +37,8 @@ $(function() {
       $("#large-or-small").change(function() {
         $(".layer3, .outcome").hide();
         var largeOrSmallInput = $("#large-or-small").val();
-        if (largeOrSmallInput === "choose") {
-          alert("Please choose what size company to work for")
+        if (largeOrSmallInput === "none") {
+          alert("Please choose preference");
         }
         else if (largeOrSmallInput === "large") {
           $("#large-company").show();
@@ -47,8 +46,8 @@ $(function() {
           $("#software-or-application").change(function() {
             $(".outcome").hide();
             var softwareOrApplicationInput = $("#software-or-application").val();
-            if (softwareOrApplicationInput === "choose") {
-              alert("Please choose your preference");
+            if (softwareOrApplicationInput === "none") {
+              alert("Please choose preference");
             }
             // you win C#
             else if (softwareOrApplicationInput === "software") {
@@ -69,8 +68,8 @@ $(function() {
           $("#little-or-lots").change(function() {
             $(".outcome").hide();
             var littleOrLotsInput = $("#little-or-lots").val();
-            if (littleOrLotsInput === "choose") {
-              alert("Please choose your preference");
+            if (littleOrLotsInput === "none") {
+              alert("Please choose preference");
             }
             else if (littleOrLotsInput === "little") {
               $("#phpCourse").show();
