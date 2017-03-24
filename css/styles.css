@@ -1,9 +1,36 @@
-form {
-  margin: 20px;
+body {
+  background-image: url("../img/coding.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  text-align: justify;
 }
+
+.jumbotron {
+  margin: 20px 15%;
+}
+
+h1 {
+  text-align: left;
+}
+form {
+  margin: 20px 15%;
+}
+
 .outcome {
   display: none;
 }
-.layer2, .layer3 {
+
+.layer1, .layer2, .layer3 {
   display: none;
+}
+
+.clickable {
+  text-decoration: underline;
+}
+
+.clickable:hover {
+  background-color: tan;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
 }
