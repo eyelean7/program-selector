@@ -12,7 +12,12 @@ $(function() {
           alert("Please choose the more appealing option")
         }
         else if (cssDesignInput === "css") {
+          $(".outcome").hide();
           $("#cssCourse").show();
+        }
+        else if (cssDesignInput === "design") {
+          $(".outcome").hide();
+          $("#designCourse").show();
         }
       });
     }
