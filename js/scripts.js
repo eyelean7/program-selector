@@ -1,12 +1,11 @@
 $(function() {
-  // first level will send an error or generate one of the two subsequent question options
+  // first level front or back end
   $("#whichEndSelect").change(function() {
-    $(".layer2, .layer3, .layer4, .outcome").hide();
+    $(".layer2, .layer3, .outcome").hide();
     var whichEndInput = $("#whichEndSelect").val();
     if (whichEndInput === "choose") {
       alert("Please choose front-end or back-end");
     }
-    // second level that leads you down path of front-end development
     else if (whichEndInput === "front") {
       $("#front-end").show();
       $("#css-or-design").change(function() {
@@ -15,48 +14,59 @@ $(function() {
         if (cssDesignInput === "choose") {
           alert("Please choose the more appealing option")
         }
-        // you should learn CSS
+        // you win CSS
         else if (cssDesignInput === "css") {
           $("#cssCourse").show();
         }
-        // you should learn web design
+        // you win Web Design
         else if (cssDesignInput === "design") {
           $("#designCourse").show();
         }
       });
     }
-    // second level that leads you down the path of back-end development
     else if (whichEndInput === "back") {
       $("#back-end").show();
+        // third level asks preference
       $("#large-or-small").change(function() {
-        $(".layer3, .layer4, .outcome").hide();
+        $(".layer3, .outcome").hide();
         var largeOrSmallInput = $("#large-or-small").val();
-        // error message
         if (largeOrSmallInput === "choose") {
           alert("Please choose what size company to work for")
         }
-        // third level asks preference
         else if (largeOrSmallInput === "large") {
-          $(".layer3").hide();
           $("#large-company").show();
           $("#software-or-application").change(function() {
+            $(".outcome").hide();
             var softwareOrApplicationInput = $("#software-or-application").val();
-            // error
             if (softwareOrApplicationInput === "choose") {
               alert("Please choose your preference");
             }
-            // fourth level determines outcome
+            // you win C#
             else if (softwareOrApplicationInput === "software") {
               $(".outcome").hide();
               $("#cSharpCourse").show();
             }
+            // you win Java
             else if (softwareOrApplicationInput === "application") {
               $("#javaCourse").show();
             }
           });
         }
         else if (largeOrSmallInput === "small") {
-          alert("You will learn PHP or Ruby")
+          $("#small-company").show();
+          $("#little-or-lots").change(function() {
+            $(".outcome").hide();
+            var littleOrLotsInput = $("#little-or-lots").val();
+            if (littleOrLotsInput === "choose") {
+              alert("Please choose your preference");
+            }
+            else if (littleOrLotsInput === "little") {
+              $("#phpCourse").show();
+            }
+            else if (littleOrLotsInput === "lots") {
+              $("#rubyCourse").show();
+            }
+          });
         }
       });
     }
