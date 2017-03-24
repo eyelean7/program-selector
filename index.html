@@ -13,13 +13,13 @@
       <!-- introduction -->
       <div class="jumbotron" id="intro">
         <h1>So, you want to be a programmer?</h1>
-        <p>You've decided to learn how to program. Congratulations! But there is still a long way to go. The next step is deciding what language best suits your goals. <span class="clickable">Take the quiz</span> to find out your ideal path!</p>
+        <p>You've decided to learn how to program. Congratulations! But there is still a long way to go. The next step is deciding what language best suits your goals. <span class="clickable">Take the quiz</span> to find out your ideal path! Once you've taken this quiz, you can try my <a href="other-quiz.html">other version</a>.</p>
       </div>
       <!-- first question -->
       <form class="layer1" id="whichEnd">
         <h3 class="well">Are you more interested in displaying information to the user or working with data the user never sees?</h3>
-        <select class="form-control" id="whichEndSelect">
-          <option value="choose">choose</option>
+        <select class="form-control layer1" id="whichEndSelect">
+          <option value="none">choose</option>
           <option value="front">displaying information</option>
           <option value="back">invisible data</option>
         </select>
@@ -28,7 +28,7 @@
       <form class="layer2" id="front-end">
         <h3 class="well">Is it more appealing to make content look great on all devices, or to create user-friendly website layouts?</h3>
         <select class="form-control" id="css-or-design">
-          <option value="choose">choose</option>
+          <option value="none">choose</option>
           <option value="css">great look</option>
           <option value="design">user-friendly layout</option>
         </select>
@@ -36,7 +36,7 @@
       <form class="layer2" id="back-end">
         <h3 class="well">Would you like to work for a large company such as Microsoft?</h3>
         <select class="form-control" id="large-or-small">
-          <option value="choose">choose</option>
+          <option value="none">choose</option>
           <option value="large">yes!</option>
           <option value="small">eh...</option>
         </select>
@@ -45,7 +45,7 @@
       <form class="layer3" id="large-company">
         <h3 class="well">Would you rather build business software or high-performance applications?</h3>
         <select class="form-control" id="software-or-application">
-          <option value="choose">choose</option>
+          <option value="none">choose</option>
           <option value="software">business software</option>
           <option value="application">high-performance applications</option>
         </select>
@@ -53,7 +53,7 @@
       <form class="layer3" id="small-company">
         <h3 class="well">Would you rather build website that have little or no user-generated content, or websites with lots of user-generated content?</h3>
         <select class="form-control" id="little-or-lots">
-          <option value="choose">choose</option>
+          <option value="none">choose</option>
           <option value="little">not very much user-generated content</option>
           <option value="lots">mostly user-generated content</option>
         </select>
