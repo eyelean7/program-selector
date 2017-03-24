@@ -1,6 +1,9 @@
 form {
   margin: 20px;
 }
+.outcome {
+  display: none;
+}
 #front-end {
   display: none;
 }

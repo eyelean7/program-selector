@@ -11,6 +11,9 @@ $(function() {
         if (cssDesignInput === "choose") {
           alert("Please choose the more appealing option")
         }
+        else if (cssDesignInput === "css") {
+          $("#cssCourse").show();
+        }
       });
     }
   });
