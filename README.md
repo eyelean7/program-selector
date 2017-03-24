@@ -20,4 +20,6 @@ _HTML, CSS, Bootstrap, JavaScript, jQuery_
 
 ### License
 
+MIT License
+
 Copyright (c) 2017 Ilene Gorski

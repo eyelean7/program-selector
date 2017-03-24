@@ -1,11 +1,19 @@
 body {
   background-image: url("../img/coding.jpg");
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
+  text-align: justify;
 }
 
+.jumbotron {
+  margin: 20px 15%;
+}
+
+h1 {
+  text-align: left;
+}
 form {
-  margin: 20px;
+  margin: 20px 15%;
 }
 
 .outcome {
