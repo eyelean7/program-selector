@@ -4,9 +4,6 @@ form {
 .outcome {
   display: none;
 }
-#front-end {
-  display: none;
-}
-#back-end {
+.layer2, .layer3 {
   display: none;
 }

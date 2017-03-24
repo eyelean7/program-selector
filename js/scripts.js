@@ -23,7 +23,7 @@ $(function() {
       });
     }
     else if (whichEndInput === "back") {
-      $("layer2").hide();
+      $(".layer2").hide();
       $("#back-end").show();
       $("#large-or-small").change(function() {
         var largeOrSmallInput = $("#large-or-small").val();
@@ -31,7 +31,18 @@ $(function() {
           alert("Please choose what size company to work for")
         }
         else if (largeOrSmallInput === "large") {
-          alert("You will learn C# or Java")
+          $(".layer3").hide();
+          $("#large-company").show();
+          $("#software-or-application").change(function() {
+            var softwareOrApplicationInput = $("#software-or-application").val();
+            if (softwareOrApplicationInput === "choose") {
+              alert("Please choose your preference");
+            }
+            else if (softwareOrApplicationInput === "software") {
+              $(".outcome").hide();
+              $("#cSharpCourse").show();
+            }
+          });
         }
         else if (largeOrSmallInput === "small") {
           alert("You will learn PHP or Ruby")
