@@ -1,36 +1,35 @@
 $(function() {
   // first level will send an error or generate one of the two subsequent question options
   $("#whichEndSelect").change(function() {
+    $(".layer2, .layer3, .layer4, .outcome").hide();
     var whichEndInput = $("#whichEndSelect").val();
     if (whichEndInput === "choose") {
       alert("Please choose front-end or back-end");
     }
     // second level that leads you down path of front-end development
     else if (whichEndInput === "front") {
-      $(".layer2").hide();
       $("#front-end").show();
       $("#css-or-design").change(function() {
+        $(".outcome").hide();
         var cssDesignInput = $("#css-or-design").val();
         if (cssDesignInput === "choose") {
           alert("Please choose the more appealing option")
         }
         // you should learn CSS
         else if (cssDesignInput === "css") {
-          $(".outcome").hide();
           $("#cssCourse").show();
         }
         // you should learn web design
         else if (cssDesignInput === "design") {
-          $(".outcome").hide();
           $("#designCourse").show();
         }
       });
     }
     // second level that leads you down the path of back-end development
     else if (whichEndInput === "back") {
-      $(".layer2", "layer3").hide();
       $("#back-end").show();
       $("#large-or-small").change(function() {
+        $(".layer3, .layer4, .outcome").hide();
         var largeOrSmallInput = $("#large-or-small").val();
         // error message
         if (largeOrSmallInput === "choose") {
